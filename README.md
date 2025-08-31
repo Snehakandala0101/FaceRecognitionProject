@@ -3,12 +3,13 @@
 
 ---
 
-##Overview
+##**Overview**
+
 This project implements a **real-time face recognition system** using Python and OpenCV. It uses **Haar Cascade Classifier** for face detection and **LBPH (Local Binary Patterns Histograms)** Face Recognizer for training and recognition. The system can detect faces from webcam input, collect datasets, train a model, and perform recognition in real-time.
 
 ---
 
-##Features
+##**Features**
 - Capture dataset of face images using webcam
 - Train an LBPH model on the collected dataset
 - Real-time face recognition via webcam
@@ -16,7 +17,7 @@ This project implements a **real-time face recognition system** using Python and
 
 ---
 
-##Algorithms & Technologies Used
+##**Algorithms & Technologies Used**
 - **Haar Cascade Classifier** -> For detecting faces in frames
 - **LBPH (Local Binary Patterns Histograms)** -> For recognizing and matching faces
 - **Python Libraries**:
@@ -25,14 +26,14 @@ This project implements a **real-time face recognition system** using Python and
   - Pillow
 
 ---
-##Workflow
-1.**Create Dataset** – Capture 30 samples of the user’s face via webcam
-2.**Train Model** – Train LBPH recognizer using the collected dataset
-3.**Recognize Faces** – Detect and recognize faces in real-time
+##**Workflow**
+- **Create Dataset** – Capture 30 samples of the user’s face via webcam
+- **Train Model** – Train LBPH recognizer using the collected dataset
+- **Recognize Faces** – Detect and recognize faces in real-time
 
 ---
 
-##Project Structure
+##**Project Structure**
 FaceRecognitionProject/
 - dataset/                                # Folder to store captured face images (currently empty)
 - .gitignore
@@ -49,45 +50,55 @@ FaceRecognitionProject/
 ---
 
 
-##Installation
+##**Installation**
 1. Clone this repository:
-git clone https://github.com/YourUsername/FaceRecognitionProject.git
-cd FaceRecognitionProject
+
+git clone https://github.com/Snehakandala0101/FaceRecognitionProject.git
+`cd FaceRecognitionProject`
 
 2. Install required dependencies:
-pip install -r requirements.txt
+
+`pip install -r requirements.txt`
 
 ---
 
-##Usage
-1. Collect Dataset
-python 0_create_dataset.py
+##**Usage**
+
+1. Collect Dataset:
+         
+   `python 0_create_dataset.py`
 - Enter a numeric user ID and name
 - Look at the camera until 30 samples are captured in the dataset/ folder
 
-2. Train Model
-python 1_train_model.py
+2. Train Model:
+   
+   `python 1_train_model.py`
 - Trains LBPH model and generates trainer.yml
 
-3. Run Real-Time Recognition
-python 2_face_recognition.py
+3. Run Real-Time Recognition:
+
+    `python 2_face_recognition.py`
 - Detects and recognizes known faces from webcam input
 - Shows User ID / Name and confidence score
+---
 
-Sample Output
+**Sample Output**
 - Faces detected are highlighted with rectangles
 - Recognized faces show User ID / Name and confidence score
-
-Notes for GitHub Users
+---
+**Notes for GitHub Users**
 - The dataset/ folder is empty to begin with. Users must collect their own face images.
 - The .gitignore file ensures temporary files, __pycache__, and other unnecessary files are not uploaded.
-
-Future Improvements
+---
+**Future Improvements**
 - Add deep learning-based recognition (FaceNet, Dlib)
 - Multi-face recognition and tracking
 - GUI for easier use
 - Database integration for storing face data
-
+---
 Author
+
 Kandala Sneha
+
 Email: kandalasneha2411@gmail.com
+
