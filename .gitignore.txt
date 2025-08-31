@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Dataset folder (do not upload large images)
+dataset/
+
+# Virtual environment
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Python log files
+*.log
+
+# Trained model file (optional: include or exclude)
+4_trainer.yml
